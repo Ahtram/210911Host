@@ -16,7 +16,7 @@
       <div class="aspect"></div>
       <div class="webgl-content">
         <div id="unityContainer">
-          <canvas id="unity-canvas" style="background: #231F20"></canvas>
+          <canvas id="unity-canvas" style="background: url('Build/export.jpg') center / cover"></canvas>
         </div>
       </div>
     </div>
@@ -24,9 +24,9 @@
     <script src="MyLoader.js"></script>
     <script>
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/export.data.gz",
-        frameworkUrl: "Build/export.framework.js.gz",
-        codeUrl: "Build/export.wasm.gz",
+        dataUrl: "Build/export.data.unityweb",
+        frameworkUrl: "Build/export.framework.js.unityweb",
+        codeUrl: "Build/export.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "project210911",
